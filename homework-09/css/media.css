@@ -1,0 +1,130 @@
+@media (min-width: 321px) and (max-width: 768px) {
+  .site-header {
+    background: url(../img/banner/banner-tablet.png) no-repeat center;
+    height: 700px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 768px) {
+  .site-nav {
+    width: 87.63%;
+    flex-direction: row-reverse;
+    min-height: 0;
+    margin-bottom: 4em;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+
+  .site-logo {
+    width: 100%;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .one {
+    order: -2;
+  }
+
+  .-three {
+    order: -1;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+  .primary-title {
+    font-size: 52px;
+  }
+
+  .primary-title-about {
+    min-width: 395px;
+    font-size: 24px;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+  }
+
+  .button-one {
+    height: 40px;
+    width: 225px;
+    margin-top: 1em;
+  }
+
+  .secondary-title {
+    min-width: 420px;
+  }
+
+  .team-list-item {
+    margin-top: 1.938em;
+  }
+}
+
+@media (min-width: 769px) {
+  .site-header {
+    background: url(../img/banner/banner-desktop.png) no-repeat center;
+    background-size: cover;
+    height: 700px;
+  }
+
+  .site-nav {
+    width: 65.48%;
+    flex-direction: row-reverse;
+    max-height: 20px;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+
+  .site-logo {
+    width: 100%;
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .primary-title {
+    font-size: 52px;
+    margin-top: 0.3em;
+  }
+
+  .primary-title-about {
+    min-width: 395px;
+    font-size: 24px;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+  }
+
+  .button-one {
+    height: 40px;
+    width: 225px;
+    margin-top: 1em;
+  }
+
+  .secondary-title {
+    min-width: 420px;
+  }
+
+  .team-list-item {
+    margin-top: 1.93em;
+  }
+
+  .one {
+    order: -2;
+  }
+
+  .-three {
+    order: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 942px !important;
+  }
+}

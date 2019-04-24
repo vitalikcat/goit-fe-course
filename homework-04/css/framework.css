@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 1170px;
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.primary-title{
+    font-size: 50px;
+    margin: 0.5em 0;
+}
+
+.secondary-title{
+    font-size: 36;
+    margin: 0.4em;
+}
+
+.color-purple{
+    color: rgb(128, 0, 131);
+    /*RGB*/
+}
+
+
+.main-bg-color{
+    background: #add8e6;
+}
+
+.random-color{
+    color: hsla(30, 50%, 63%, 0.5);
+}
+
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}

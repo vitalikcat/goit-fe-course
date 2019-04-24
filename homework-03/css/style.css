@@ -1,0 +1,161 @@
+html{ 
+    box-sizing: border-box;  /*Задает width и height не контента а блока.*/
+}
+
+*,
+*::before, /*Для всех псевоэлементов всех элементов*/
+*::after{
+    box-sizing: inherit; /*наследуй*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.container{  /*Ограничивает по ширине наш контент.*/
+    width: 900px;  /*Ширина общего контейнера*/
+    margin: 0 auto;  /*Выровняли по центру (Вертикальный и нижний отступ = 0)*/
+    padding: 0;
+ /*Задали фон для контейнера*/
+}
+
+img.picture {
+    height: 280px;
+    width: 420px;
+    object-fit: cover;
+    }
+
+article{
+    font-size: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Name-navigation-list*/
+
+.name-nav.container{
+    margin: 76px auto;
+}
+
+.name-navigation-list a.name-lifestyle{
+    color: rgb(0, 219, 219);
+}
+
+.name-navigation-list a.name-music{
+    font-family: 'Playfair Display', serif;
+}
+
+.name-navigation-list a.name-travel{
+    font-family: 'Playfair Display', serif;
+}
+
+.name-navigation-list a{
+text-transform: uppercase;
+text-decoration: none;
+font-size: 14px;
+color: #626262;
+}
+
+.name-navigation-list{  /*Rules for List*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px
+}
+
+.name-navigation-list li{ /*Rules for every li in List*/
+    display: inline-block;  /*Отображать как строчно-блочные*/
+}
+
+
+/*.name-navigation-list li:last-child{ 
+    margin-right: 0;  
+}*/
+
+.name-navigation-list li:not(:last-child){ /*Every li exept last li*/
+    margin-right: 120px;
+}
+
+.name-navigation-list a:hover,
+.name-navigation-list a:focus{
+    color: rgb(129, 165, 153);
+}
+
+.name-content.container{
+    margin-top: 100px;
+}
+
+/*content*/
+.name-information{
+    margin-bottom: 52px;
+}
+
+.name-article {
+    width: 420px;
+    margin: 0;
+    padding: 0;
+    font-size: initial;
+    display: inline-block;
+    margin-bottom: 130px;
+    vertical-align: top; /*Добавил*/
+    }
+
+.name-article:not(:nth-child(2n)){
+    margin-right: 60px;
+}
+
+.name-article:nth-last-child(-n +2){
+    margin-bottom: 0;
+}
+
+img.picture{
+    margin-bottom: 30px;
+}
+
+.name-article h1{
+    margin-bottom: 34px;
+    color: #626262;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.name-article p{
+    font-size: 14px;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    line-height: 24px;
+}
+
+p.pre-name{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14;
+    font-family: 'Ubuntu', sans-serif;
+    color: b4ad9e;
+}
+
+.name-button-box{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.loadmore-button{
+    margin: 0;
+    padding: 22px 32px 20px 32px;
+    border: 1px solid #222222;
+    font-size: 20px;
+    color: #626262;
+    line-height: 24px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    background-color: #fff;
+}

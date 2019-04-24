@@ -1,0 +1,265 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+div {
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.page-nav {
+    padding: 38px 0;
+}
+
+.logo {
+    float: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f0101;
+    font-family: 'Roboto' sans-serif;
+}
+
+.title::first-letter {
+    color: #1abc9c;
+}
+
+.site-navigation {
+    width: 504px;
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+.site-navigation li{
+    float: left;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #0f0101;
+}
+
+.navigation-link:hover {
+    color: red;
+}
+
+.navigation-link-current:first-child {
+    color: #1abc9c;
+}
+
+
+.section-features {
+    margin-top: 90px;
+}
+
+.features-title {
+    margin: 0;
+    margin-bottom: 90px;
+    padding-bottom: 32px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #515151;
+}
+
+.features-title::after {
+    background-color: #1abc9c;
+    display: block;
+    content: "";
+    width: 160px;
+    height: 8px;
+    bottom: -8px;
+    left:50%;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transform:translateX(-50%);
+}
+
+.features-title:hover::after,
+.features-title:focus::after {
+    width: 80%;
+}
+
+
+
+.product-case {
+    width: 255px;
+    margin-right: 30px;
+    float: left;
+    cursor: pointer;
+    font-size: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.product-case:hover .product-item-name {
+    filter: grayscale(0);
+    background-color: #1abc9c;
+}
+
+.product-case:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.product-image {
+    background-repeat: no-repeat;
+    background-color: #c1e3e6;
+    background-position: center;
+    background-color: #e9f0fd;
+    content: '';
+    display: block;
+}
+
+.product-item-name {
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    background-color: #323232;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 38px;
+    padding-left: 14px;
+    margin: 0;
+}
+
+.product-item-price {
+    width: 55px;
+    background-color: #8c8c8c;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    float: right;
+    margin: 0;
+    line-height: 38px;
+}
+
+.latesnews-title {
+    color: #555252;
+    margin-bottom: 104px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 104px;
+}
+
+.latesnews-title::after {
+    background-color: #1abc9c;
+    display: block;
+    content: "";
+    width: 160px;
+    height: 8px;
+    left:50%;
+    bottom: -20px;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transform:translateX(-50%);
+}
+
+.latesnews-title:hover::after,
+.latesnews-title:focus::after {
+    width: 80%;
+}
+
+.article {
+    width: 350px;
+    height: 540px;
+    float: left;
+}
+
+.article:not(:last-child) {
+    margin-right: 30px;
+}
+
+.article-name {
+    color: #555252;
+    font-size: 18px;
+    padding: 14px 0 40px 0;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.article-name::after {
+    background-color: #1abc9c;
+    display: block;
+    content: "";
+    left: 22%;
+    width: 136px;
+    height: 3px;
+    bottom: 30px;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transform:translateX(-50%);
+}
+
+.article-name:hover::after,
+.article-name:focus::after {
+    width: 100%;
+}
+
+.article-content {
+    font-size: 14px;
+    color: #555252;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.button-box{
+    float: left;
+}
+
+.button-item {
+    margin: 0;
+    color: #fff;
+    padding: 16px 38px 16px 38px;
+    border: 1px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #4ec6ab;
+}

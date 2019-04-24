@@ -1,0 +1,384 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  max-width: 1110px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+/*Header*/
+
+.page-header { /*Added width 1140px; padding-top 30px;
+  padding-bottom-30px*/
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  display: block;
+  float: left;
+  color: rgb(85, 82, 82);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo a {
+  display: block;
+  text-decoration: none;
+  color: #555252;
+  font-size: 30px;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+  font-family: "roboto-black";
+}
+
+/*Nav menu*/
+
+.navigation { /*Deleted margin padding*/
+  float: right;
+}
+
+.nav-list { /*Font styles in nav-a tag*/
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.home {
+  color: #1abc9c;
+}
+
+.navigation li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 34px;
+}
+
+.nav-link {
+  display: block;
+  color: #0f0101;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(41, 160, 136);
+}
+
+/*Section Row-1*/
+
+/*Slider*/
+
+.slider {
+  position: relative;
+}
+
+.slider img {
+  position: relative;
+  width: 100%;
+  left: 0;
+}
+
+.text-inside {
+  position: absolute;
+  width: 790px;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.primary-title { /*Added margin 0*/
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-title-about {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+
+.button {
+  position: absolute;
+  border: none;
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  top: 50%;
+  transform: translateY(-35%);
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: rgba(26, 188, 156, 1);
+  z-index: 2;
+}
+
+.button-prev {
+  left: 206px;
+  background-image: url(../img/slider-buttons/slider-button-prev.png)
+}
+
+.button-next {
+  right: 206px;
+  background-image: url(../img/slider-buttons/slider-button-next.png)
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.slider:after {
+  /*Изминение цвета баннера*/
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+/*Section Row-2*/
+
+.section-collection {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: rgb(233, 240, 253);
+}
+
+.secondary-title { /*Deleted paddings*/
+  position: relative;
+  text-transform: uppercase;
+  color: rgb(81, 81, 81);
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 80px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.secondary-title::after {
+  background-color: #1abc9c;
+  display: block;
+  content: "";
+  width: 160px;
+  height: 8px;
+  bottom: -8px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.collection {
+  padding-bottom: 52px;
+}
+
+.collection-item {
+  width: 255px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.collection-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.collection-item a {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.item-name {
+  width: 80%;
+  height: 12%;
+  float: left;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #323232;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.collection-item a:hover .item-name {
+  background-color: #1abc9c;
+}
+
+.item-price {
+  width: 20%;
+  height: 12%;
+  float: right;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #8c8c8c;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.collection-item a:hover .item-price {
+  background-color: #7fd9c7;
+}
+
+.overlay {
+  width: 235px;
+  height: 300px;
+  background: rgba(115, 115, 115, 0.55);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+}
+
+.collection-item .nav-a:hover .overlay {
+  opacity: 0.9;
+}
+
+.overlay:hover {
+  opacity: 0.9;
+}
+
+.overlay-menu {
+  position: absolute;
+  margin: 0 auto;
+  top: 80px;
+  left: 34px;
+  right: 34px;
+}
+
+.overlay-menu-item {
+  display: inline-block;
+}
+
+.overlay-menu-item:not(:nth-child(3n)) {
+  margin-right: 8px;
+}
+
+.overlay-menu-item button {
+  display: inline-block;
+}
+
+.overlay-menu-item button:hover {
+  background-color: #1abc9c;
+}
+
+.overlay-menu-item-long {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.item-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #fff;
+}
+
+.one {
+  background-image: url(../img/icons/icon-1.png);
+}
+
+.two {
+  background-image: url(../img/icons/icon-2.png);
+  background-color: transparent;
+}
+
+.three {
+  background-image: url(../img/icons/icon-3.png);
+}
+
+.four {
+  background-image: url(../img/icons/icon-add.png);
+    width: 164px;
+    height: 48px;
+    background-color: transparent;
+}
+
+.four:hover {
+  background-color: #323232;
+}
+
+/*Footer*/
+
+.page-footer {
+  position: inherit;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+}
+
+.footer-text {
+  font-size: 16px;
+  text-align: center;
+  padding: 34px 0;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footer-text span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #46bfa9;
+}

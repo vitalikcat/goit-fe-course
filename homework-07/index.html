@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <title>Homework-07</title>
+  </head>
+  <body>
+    <header class="site-header"> <!--Added padding to header-->
+      <nav class="site-nav wrapper">
+        <a class="site-logo"href="">Golden</a> <!--Added display block-->
+        <ul class="navigation-list">
+          <li class="list-item"><a href="" class="list-item-link">home</a></li>
+          <li class="list-item">
+            <a href="" class="list-item-link">service</a>
+          </li>
+          <li class="list-item">
+            <a href="" class="list-item-link">portfolio</a>
+          </li>
+          <li class="list-item"><a href="" class="list-item-link">about</a></li>
+          <li class="list-item">
+            <a href="" class="list-item-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main> <!--Added two section-->
+      <section class="service-section wrapper"> 
+        <h2 class="primary-title">Services</h2> <!--Changed h1 on h2 tag-->
+        <p class="primary-sub-title"> <!--Changed h2 on p tag-->
+          Proin iaculis purus consequat sem cure.
+        </p>
+
+      <div class="service-wrapper">
+        <article class="service-item img-1">
+            <p class="item-text-name">E-Commerce</p> <!--deleted padding 0-->
+            <p class="item-text-about"> <!--deleted padding 0-->
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+        </article>
+
+        <article class="service-item img-2"> 
+            <p class="item-text-name">Responsive Web</p>
+            <p class="item-text-about">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+        </article>
+
+        <article class="service-item img-3">
+            <p class="item-text-name">Web Security</p>
+            <p class="item-text-about">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+        </article>
+      </div>
+      </section>
+
+      <section class="form-section wrapper"> 
+          <h2 class="secondary-title">Contact us</h2> <!--Changed h1 on h2-->
+          <p class="secondary-sub-title"> <!--Changed h2 on p-->
+            Proin iaculis purus consequat sem cure.
+          </p>
+        <form class="contact-us-form container" action="#">
+          <div class="form-wrapper">
+            <div class="item-wrapper">
+              <label class="item-label" for="#">
+                <input      
+                  id="input"
+                  class="form-text"
+                  type="text"
+                  name="name"
+                  required =""
+                  placeholder="your name *"
+                />
+              </label>
+              <label class="item-label" for="#">
+                <input
+                  id="input"
+                  class="form-text"
+                  type="email"
+                  name="email"
+                  required =""
+                  placeholder="your e-mail *"
+                />
+              </label>
+              <label class="item-label" for="#">
+                <input
+                  id="input"
+                  class="form-text"
+                  type="name"
+                  name="subject"
+                  placeholder="subject"
+                />
+              </label>
+            </div>
+            <div class="item-wrapper">
+              <label class="item-label big" for="#">
+                <textarea
+                  class="form-text"
+                  name="message"
+                  id=textarea"
+                  required=""
+                  placeholder="your message *"
+                >
+                </textarea>
+              </label>
+            </div>
+            <button class="button-submit" type="submit">send message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
